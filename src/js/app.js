@@ -34,10 +34,12 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name ? variables.name : "Nombre"} ${
-    variables.lastname
+    variables.lastname ? variables.lastname : "Apellido"
   }</h1>
-          <h2>${variables.role}</h2>
-          <h3>${variables.city}, ${variables.country}</h3>
+          <h2>${variables.role ? variables.role : "Role"}</h2>
+          <h3>${variables.city ? variables.city : "City"}, ${
+    variables.country ? variables.country : "Country"
+  }</h3>
           <ul class="position-right">
             <li><a href="https://twitter.com/${
               variables.twitter
