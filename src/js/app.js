@@ -21,6 +21,9 @@ import "../style/index.css";
         role: null,
         country: null,
         city: null
+      
+        
+
     }
  */
 function render(variables = {}) {
@@ -41,8 +44,8 @@ function render(variables = {}) {
           <h3>${variables.city ? variables.city : "City"}, ${
     variables.country ? variables.country : "Country"
   }</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/${
+          <ul class= ${variables.socialMediaPosition}>
+            <li class="display"><a href="https://twitter.com/${
               variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${
